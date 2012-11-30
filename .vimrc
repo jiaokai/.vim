@@ -165,7 +165,7 @@ set splitbelow      " splitbelow：新的 split 窗口放在下面
 set wildmenu
 
 set linespace=2     " 设置行间距
-set fillchars=stlnc:=,fold:.
+" set fillchars=stlnc:=,fold:.
 
 " GUI 设置 {{{2
 "=============================================================================
@@ -660,6 +660,9 @@ let g:indent_guides_auto_colors = 1
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
+
+" vim-powerline {{{2
+let g:Powerline_symbols = 'fancy'
 
 " camelcasemotion
 " 1.52 2011-11-12
