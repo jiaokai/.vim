@@ -145,8 +145,10 @@ vno <RightMouse> y
 "== 2. 界面设置 == {{{1
 "=============================================================================
 " let g:solarized_style = "dark"
-" color solarized      " 配色方案Olivia
-color olivia
+color molokai
+let g:molokai_original=1
+" color olivia     " 配色方案Olivia
+" color inkpot
 
 syntax enable       " 使用语法高亮
 " Solarized VIM
@@ -176,7 +178,7 @@ if has("gui_running")
     set guioptions-=L   " split window 时也不显示左边的 scrollbar
     set guioptions-=r   " 不显示右边的 scrollbar
     set guioptions-=R   " split window 时也不显示右边的 scrollbar
-    set guifont=Monaco:h12
+    set guifont=Monaco:h11
     " set guifontwide=Hei:h11
     set showtabline=1
     set lines=80
@@ -657,6 +659,9 @@ let g:vimroom_width=120
 " 1.5 2011-03-13
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 1
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd guibg=red ctermbg=3
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
+
 let g:indent_guides_color_change_percent = 5
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
