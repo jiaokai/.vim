@@ -80,10 +80,14 @@ hi MoreMsg             guifg=#E6DB74
 hi Operator            guifg=#F92672
 
 " complete menu
-hi Pmenu               guifg=#66D9EF guibg=#000000
-hi PmenuSel            guibg=#808080
-hi PmenuSbar           guibg=#080808
-hi PmenuThumb          guifg=#66D9EF
+" hi Pmenu               guifg=#66D9EF guibg=#000000
+" hi PmenuSel            guibg=#808080
+" hi PmenuSbar           guibg=#080808
+" hi PmenuThumb          guifg=#66D9EF
+hi Pmenu          gui=NONE  guibg=#303030  guifg=gold
+hi PmenuSel       gui=bold  guibg=#2261a1  guifg=white
+hi PmenuSbar      gui=NONE  guibg=gray30   guifg=NONE
+hi PmenuThumb     gui=NONE  guibg=gold     guifg=NONE
 
 hi PreCondit           guifg=#A6E22E gui=bold
 hi PreProc             guifg=#A6E22E
@@ -116,8 +120,10 @@ hi Type guifg=#66D9EF gui=none
 hi Underlined guifg=#808080 gui=underline
 
 hi VertSplit guifg=#808080 guibg=#080808 gui=bold
-hi VisualNOS guibg=#403D3D
-hi Visual guibg=#403D3D
+" hi VisualNOS guibg=#403D3D
+" hi Visual guibg=#403D3D
+hi VisualNOS guibg=#403D3D gui=reverse
+hi Visual guibg=#403D3D gui=reverse
 hi WarningMsg guifg=#FFFFFF guibg=#333333 gui=bold
 hi WildMenu guifg=#66D9EF guibg=#000000
 
