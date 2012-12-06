@@ -306,11 +306,11 @@ nno <silent><C-q> :if expand('%') == ''<Bar>bw!<Bar>else<Bar>bw<Bar>endif<CR>
 "-----------------------------------------------------
 ino <C-TAB> <Esc>:bn<CR>
 nno <C-TAB>      :bn<CR>
-ino <S-TAB> <Esc>:bp<CR>
-nno <S-TAB>      :bp<CR>
+" ino <S-TAB> <Esc>:bp<CR>
+" nno <S-TAB>      :bp<CR>
 
-nno <M-j> :bn<CR>
-nno <M-k> :bp<CR>
+" nno <M-j> :bn<CR>
+" nno <M-k> :bp<CR>
 
 " function Maps {{{2
 " ============================================================================
@@ -380,16 +380,16 @@ nno <leader>d a<C-R>=strftime('%Y-%m-%d %H:%M:%S')<Esc><Esc>
 
 " [insert] smartkey {{{2
 "=============================================================================
-ino <M-h> <LEFT>
-ino <M-l> <RIGHT>
-ino <M-j> <DOWN>
-ino <M-k> <UP>
+" ino <M-h> <LEFT>
+" ino <M-l> <RIGHT>
+" ino <M-j> <DOWN>
+" ino <M-k> <UP>
 
-ino <M-d> <DELETE>
-ino <M-w> <HOME>
-ino <M-e> <END>
+" ino <M-d> <DELETE>
+" ino <M-w> <HOME>
+" ino <M-e> <END>
 
-ino <M-g> <backspace>
+ino <M-h> <backspace>
 
 ino <C-b> <LEFT>
 ino <C-f> <RIGHT>
@@ -672,6 +672,18 @@ let g:Powerline_symbols = 'fancy'
 " camelcasemotion
 " 1.52 2011-11-12
 
+" ultisnips {{{2
+let g:UltiSnipsUserPythonVersion = 2
+let g:UltiSnipsExpandTrigger = "<M-TAB>"
+let g:UltiSnipsListSnippets = "<M-j>"
+let g:UltiSnipsJumpForwardTrigger = "<M-TAB>"
+let g:UltiSnipsJumpBackwardTrigger = "<M-k>"
+
+" gundo {{{2
+let g:gundo_width = 45
+let g:gundo_preview_height = 40
+let g:gundo_right = 1
+nnoremap <F9> :GundoToggle<CR>
 
 " {{{1
 " -- EOF --
