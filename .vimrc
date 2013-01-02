@@ -26,6 +26,7 @@ set all&            " 读取此配置文件的开始，所有选项使用缺省�
                     " “&”：是为了避免打开vim时，显示一个个选项缺省值的对话框
 
 set nocompatible    " 关掉有关vi一致性模式，避免以前版本的一些bug和局限
+:let &cdpath = ',' . substitute(substitute($CDPATH, '[, ]', '\\\0', 'g'), ':', ',', 'g')
 
 " 设置 runtimepath
 "set runtimepath+=~/.vim
@@ -668,6 +669,8 @@ let g:indent_guides_start_level = 2
 
 " vim-powerline {{{2
 let g:Powerline_symbols = 'fancy'
+let g:Powerline_colorscheme = 'solarized256'
+let g:Powerline_colorscheme = 'solarized256'
 
 " camelcasemotion
 " 1.52 2011-11-12
