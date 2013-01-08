@@ -668,9 +668,8 @@ let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 
 " vim-powerline {{{2
-let g:Powerline_symbols = 'fancy'
-let g:Powerline_colorscheme = 'solarized256'
-let g:Powerline_colorscheme = 'solarized256'
+" let g:Powerline_symbols = 'fancy'
+" let g:Powerline_colorscheme = 'solarized256'
 
 " camelcasemotion
 " 1.52 2011-11-12
@@ -687,6 +686,10 @@ let g:gundo_width = 45
 let g:gundo_preview_height = 40
 let g:gundo_right = 1
 nnoremap <F9> :GundoToggle<CR>
+" gist-vim {{{2
+let g:gist_detect_filetype = 1
+let g:gist_open_brower_after_post = 1
+let g:gundo_right = 1
 
 " {{{1
 " -- EOF --
