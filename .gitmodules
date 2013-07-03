@@ -28,3 +28,6 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
+[submodule ".\\bundle\\vim-multiple-cursors"]
+	path = .\\bundle\\vim-multiple-cursors
+	url = git://github.com/terryma/vim-multiple-cursors
