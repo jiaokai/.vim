@@ -34,6 +34,6 @@
 [submodule ".\\bundle/vim-colors-solarized"]
 	path = .\\bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
-[submodule ".\\bundle/minibufexpl"]
-	path = .\\bundle/minibufexpl
-	url = git://github.com/fholgado/minibufexpl.vim
+[submodule "bundle/vim-linemovement"]
+	path = bundle/vim-linemovement
+	url = git://github.com/yueyoum/vim-linemovement.git
