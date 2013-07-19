@@ -31,3 +31,9 @@
 [submodule "bundle/vim-linemovement"]
 	path = bundle/vim-linemovement
 	url = git://github.com/yueyoum/vim-linemovement.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = git://github.com/kien/ctrlp.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = git://github.com/scrooloose/nerdtree.git

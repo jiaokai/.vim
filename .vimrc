@@ -145,18 +145,15 @@ vno <RightMouse> y
 
 "== 2. 界面设置 == {{{1
 "=============================================================================
-" let g:solarized_style = "dark"
-color molokai
-let g:molokai_original=1
-" color olivia     " 配色方案Olivia
-" color inkpot
-
 syntax enable       " 使用语法高亮
-" Solarized VIM
-set t_Co=256
+" let g:solarized_style = "dark"
+" let g:molokai_original = 2
+" color molokai
 " set background=dark
 " colorscheme solarized
-" let g:molokai_original = 1
+colorscheme Olivia
+" Solarized VIM
+set t_Co=256
 set cursorline      " 高亮当前行
 
 
@@ -169,6 +166,8 @@ set wildmenu
 
 set linespace=2     " 设置行间距
 " set fillchars=stlnc:=,fold:.
+" 设置tabpage样式
+set guitablabel=\[%N\]\ %t\ %M
 
 " GUI 设置 {{{2
 "=============================================================================
@@ -213,7 +212,7 @@ if has("win32")
     set guifont=Consolas:h8:cANSI
     "set guifont=Bitstream_Vera_Sans_Mono:h10:cANSI
     "set guifont=Courier_New\ Monospace\ Bitstream\ Vera\ Sans\h12:cANSI
-    set guifontwide=YaHei_Mono:h8:cGB2312
+    set guifontwide=Microsoft_YaHei_Mono:h8:cGB2312
 endif
 
 
@@ -265,9 +264,6 @@ autocmd BufRead *.py map! <F9> :w<CR> :!python %<CR>
 "== 4. 键盘映射 == {{{1
 "=============================================================================
 set winaltkeys=no       " 不要让 ALT 键控制菜单，让 ALT 键可设置映射
-if has("gui_running")
-    set macmeta
-endif
 set clipboard=unnamed
 
 "let mapleader='\'
@@ -432,6 +428,10 @@ map <leader>tf :tabfir<CR>
 "map <leader>tl :tabl<CR>   "设给 taglist 了
 
 map <leader>te :tabedit
+
+for i in range(1, 9)
+    exec 'nnoremap <silent> <M-' . i . '> '. i .'gt' 
+endfor
 
 " code {{{2
 " ============================================================================
@@ -652,9 +652,6 @@ nno <leader>nt :NERDTree<CR>
 " vim-pathogen {{{2
 call pathogen#infect()
 
-" VimRoom {{{2
-let g:vimroom_background="black"
-let g:vimroom_width=120
 
 " Indent Guides {{{2
 " 1.5 2011-03-13
@@ -667,19 +664,6 @@ let g:indent_guides_color_change_percent = 5
 let g:indent_guides_guide_size = 1
 let g:indent_guides_start_level = 2
 
-" vim-powerline {{{2
-" let g:Powerline_symbols = 'fancy'
-" let g:Powerline_colorscheme = 'solarized256'
-
-" camelcasemotion
-" 1.52 2011-11-12
-
-" ultisnips {{{2
-let g:UltiSnipsUserPythonVersion = 2
-let g:UltiSnipsExpandTrigger = "<M-TAB>"
-let g:UltiSnipsListSnippets = "<M-j>"
-let g:UltiSnipsJumpForwardTrigger = "<M-TAB>"
-let g:UltiSnipsJumpBackwardTrigger = "<M-k>"
 
 " gundo {{{2
 let g:gundo_width = 45
@@ -690,6 +674,13 @@ nnoremap <F9> :GundoToggle<CR>
 let g:gist_detect_filetype = 1
 let g:gist_open_brower_after_post = 1
 let g:gundo_right = 1
-
+" line movement {{{2
+let g:linemovement_up = "<M-k>"
+let g:linemovement_down = "<M-j>"
+" ctrlp {{{2
+let g:linemovement_up = "<M-k>"
+let g:linemovement_down = "<M-j>"
 " {{{1
+"
+cd d:\doc\code
 " -- EOF --
