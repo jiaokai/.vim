@@ -22,12 +22,9 @@
 [submodule "bundle/webapi-vim"]
 	path = bundle/webapi-vim
 	url = git://github.com/mattn/webapi-vim.git
-[submodule ".\\bundle\\vim-multiple-cursors"]
-	path = .\\bundle\\vim-multiple-cursors
+[submodule "bundle/vim-multiple-cursors"]
+	path = bundle/vim-multiple-cursors
 	url = git://github.com/terryma/vim-multiple-cursors
-[submodule ".\\bundle/vim-colors-solarized"]
-	path = .\\bundle/vim-colors-solarized
-	url = git://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vim-linemovement"]
 	path = bundle/vim-linemovement
 	url = git://github.com/yueyoum/vim-linemovement.git
