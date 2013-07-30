@@ -34,3 +34,12 @@
 [submodule "bundle/nerdtree"]
 	path = bundle/nerdtree
 	url = git://github.com/scrooloose/nerdtree.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = git://github.com/bling/vim-airline
+[submodule "bundle/vim-signature"]
+	path = bundle/vim-signature
+	url = git://github.com/kshenoy/vim-signature.git
+[submodule "bundle/vim-css-color"]
+	path = bundle/vim-css-color
+	url = git://github.com/skammer/vim-css-color.git
