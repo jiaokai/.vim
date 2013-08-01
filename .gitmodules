@@ -43,3 +43,6 @@
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
 	url = git://github.com/skammer/vim-css-color.git
+[submodule "bundle/vim-easyalign"]
+	path = bundle/vim-easyalign
+	url = git://github.com/junegunn/vim-easy-align.git
